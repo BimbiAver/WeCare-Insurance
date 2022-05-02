@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="422dp"
+        android:layout_height="270dp"
+        app:srcCompat="@drawable/bshape" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/logo2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="247dp"
+        android:layout_height="235dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:id="@+id/txtView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:text="WELCOME"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtView2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="We are the most innovative motor insurance company in Sri Lanka offering insurance on the go!We provide policies that's created for your needs,not ours.WeCare Insurance is your one stop insurance shop for all your motor vehicles."
+        android:textAlignment="center"
+        android:textColor="#090909"
+        />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#F3D068"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:text="Get Started"
+        android:textColor="#404040"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package com.orionsoft.wecareinsurance
+package com.example.testinginsurance
 
 import org.junit.Test
 

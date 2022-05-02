@@ -1,11 +1,11 @@
-package com.orionsoft.wecareinsurance
+package com.example.testinginsurance
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class ExploreActivity : AppCompatActivity() {
+class Registered_Vehicles : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_explore)
+        setContentView(R.layout.activity_registered_vehicles)
     }
 }

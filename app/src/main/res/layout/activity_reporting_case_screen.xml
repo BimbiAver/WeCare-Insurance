@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Reporting_Case_Screen">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="422dp"
+        android:layout_height="270dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/bshape" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="50dp"
+        android:text="Report Your Case"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:text="Third Party Vehicle Details"
+        android:textStyle="bold"
+        android:textColor="#070707"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="386dp"
+        android:layout_height="295dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        app:srcCompat="@drawable/fadeimg"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="329dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="350dp"
+        android:layout_height="513dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        app:cardBackgroundColor="#31FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <EditText
+            android:id="@+id/vehicle_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/login_edit_background"
+            android:hint="Vehicle Number"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#404040" />
+
+        <EditText
+            android:id="@+id/model_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vehicle_num"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/login_edit_background"
+            android:hint="Brand and Model"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#404040" />
+
+        <EditText
+            android:id="@+id/d_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/model_name"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/login_edit_background"
+            android:hint="Driver's Name"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#404040" />
+
+        <EditText
+            android:id="@+id/owner_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/d_name"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="165dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/login_edit_background"
+            android:hint="Owner's Name"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#404040" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/owner_name"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="215dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/login_edit_background"
+            android:hint="Address"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#404040" />
+
+        <EditText
+            android:id="@+id/d_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="265dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/login_edit_background"
+            android:hint="Nature of Damages"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="#404040" />
+
+
+        <EditText
+            android:id="@+id/O_Details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/d_description"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="335dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/login_edit_background"
+            android:hint="Other Details"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="#404040" />
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/O_Details"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="430dp"
+            android:backgroundTint="#F3D068"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:text="Submit"
+            android:textColor="#404040"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_view1"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:text="Need Any"
+        android:textColor="#404040" />
+
+    <TextView
+        android:id="@+id/login_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_view1"
+        android:layout_toRightOf="@id/textView4"
+        android:padding="5dp"
+        android:text="Help?"
+        android:textColor="#404040"
+        android:textStyle="bold" />
+
+</RelativeLayout>

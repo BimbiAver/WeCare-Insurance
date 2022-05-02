@@ -106,7 +106,7 @@
             android:layout_marginTop="115dp"
             android:layout_marginRight="70dp"
             android:background="@drawable/login_edit_background"
-            android:hint="Driver's Name"
+            android:hint="Driver's Name:"
             android:padding="10dp"
             android:textColor="@color/black"
             android:textColorHint="#404040" />

@@ -3,8 +3,50 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/My-Projects/Mobile-Application/WeCareInsurance/app/src/main/res/layout/activity_explore.xml" value="0.20416666666666666" />
-        <entry key="..\:/My-Projects/Mobile-Application/WeCareInsurance/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/drawable/borderstyle.xml" value="0.166" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/drawable/image_dashboard.xml" value="0.188" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_case_details.xml" value="0.264" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_contact.xml" value="0.264" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_header.xml" value="0.25416666666666665" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_previous_cases.xml" value="0.24365942028985507" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_registered_vehicles.xml" value="0.264" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_registersecond.xml" value="0.264" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_report_case_details.xml" value="0.264" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_report_confirm.xml" value="0.21784420289855072" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_report_driver_details.xml" value="0.264" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_report_images.xml" value="0.25416666666666665" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_report_police.xml" value="0.264" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_report_submit.xml" value="0.25407608695652173" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_report_thirdparty.xml" value="0.25416666666666665" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_report_vehicle.xml" value="0.264" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_reset_password.xml" value="0.24365942028985507" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_reset_password_second.xml" value="0.264" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_vehicle_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_welcome.xml" value="0.25416666666666665" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/activity_welcomesecond.xml" value="0.264" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/contenct_case_details_table.xml" value="0.264" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/contenct_previous_cases_table.xml" value="0.25416666666666665" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/content_background.xml" value="0.25416666666666665" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/content_cardview.xml" value="0.21784420289855072" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/content_case_details_table.xml" value="0.16847826086956522" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/content_dashboard.xml" value="0.23278985507246377" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/content_previous_cases.xml" value="0.25416666666666665" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/content_previous_cases_cardview.xml" value="0.25416666666666665" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/content_report.xml" value="0.264" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/content_report_confirm_cardview.xml" value="0.25416666666666665" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/content_report_test.xml" value="0.21784420289855072" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/content_vehicle_details_table.xml" value="0.19882246376811594" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/content_welcome.xml" value="0.25416666666666665" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/table_profile.xml" value="0.21784420289855072" />
+        <entry key="..\:/WeCare-Insurance-Hasitha/WeCare-Insurance/app/src/main/res/layout/table_report_case.xml" value="0.264" />
+        <entry key="..\:/WeCare-Insurance/WeCare-Insurance/app/src/main/res/layout/activity_contact.xml" value="0.17889492753623187" />
+        <entry key="..\:/WeCare-Insurance/WeCare-Insurance/app/src/main/res/layout/activity_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/WeCare-Insurance/WeCare-Insurance/app/src/main/res/layout/activity_report_case_details.xml" value="0.264" />
+        <entry key="..\:/WeCare-Insurance/WeCare-Insurance/app/src/main/res/layout/activity_report_thirdparty.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

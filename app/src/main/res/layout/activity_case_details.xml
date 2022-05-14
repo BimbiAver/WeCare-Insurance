@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CaseDetailsActivity">
-
+                                                   
     <include
         android:id="@+id/include"
         layout="@layout/content_cardview"
@@ -106,6 +105,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_report"
         app:layout_constraintVertical_bias="0.669" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

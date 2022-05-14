@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.orionsoft.wecareinsurance">
+    package="com.example.testinginsurance">
 
     <application
         android:allowBackup="true"
@@ -90,6 +90,76 @@
         <activity
             android:name=".WelcomeActivity"
             android:exported="true">
+=======
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity
+            android:name=".Report_Policy_Information"
+            android:exported="false" />
+        <activity
+            android:name=".Report_Vehicle_Details"
+            android:exported="false" />
+        <activity
+            android:name=".Report_Case_Details"
+            android:exported="false" />
+        <activity
+            android:name=".Rport_Driver_Details"
+            android:exported="false" />
+        <activity
+            android:name=".Vehicle_Details"
+            android:exported="false" />
+        <activity
+            android:name=".Registered_Vehicles"
+            android:exported="false" />
+        <activity
+            android:name=".Previous_Case_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Case_Details"
+            android:exported="false" />
+        <activity
+            android:name=".Case_Confirmation_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Image_Upload_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Case_Image_Upload_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Reporting_Case_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Reset_Password_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Case_Submitted_screen"
+            android:exported="false" />
+        <activity
+            android:name=".Contact_Us_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Register_Screen_Password"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Register_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Splash_Screen"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

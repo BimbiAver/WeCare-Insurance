@@ -36,7 +36,7 @@
     <TextView
         android:id="@+id/txt_paragraph"
         android:layout_width="0dp"
-        android:layout_height="103dp"
+        android:layout_height="150dp"
 
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
@@ -48,19 +48,20 @@ for your vehicle and your lifestyle. Invest in yourself and make the switch to a
 
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="11sp"
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/include"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/include"
         app:layout_constraintTop_toTopOf="@+id/include"
-        app:layout_constraintVertical_bias="0.789" />
+        app:layout_constraintVertical_bias="0.82" />
 
     <Button
-        android:id="@+id/btn_start"
+        android:id="@+id/btnGetStarted"
         android:layout_width="369dp"
         android:layout_height="56dp"
-        android:text="Get Start"
+        android:text="Get Started"
+        android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"

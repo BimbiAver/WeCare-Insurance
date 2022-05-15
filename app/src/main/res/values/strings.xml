@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeCare Insurance</string>
+    <string name="hyperlink1">Forgot Password?<a href=""></a></string>
+    <string name="hyperlink2">Create Account<a href=""></a></string>
+    <string name="hyperlink3">help?<a href=""></a></string>
+    <string name="hyperlink4">Login<a href=""></a></string>
+    <string name="hyperlink5"><u>Get Code</u><a href=""></a></string>
+    <string name="hyperlink6">More Details<a href=""></a></string>
+    <string name="eng">Eng</string>
+
+</resources>

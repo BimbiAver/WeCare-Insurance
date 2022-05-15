@@ -6,4 +6,69 @@
     android:layout_height="match_parent"
     tools:context=".ExploreActivity">
 
+    <include
+        android:id="@+id/include"
+        layout="@layout/activity_header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/include"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.627" />
+
+    <TextView
+        android:id="@+id/txt_paragraph"
+        android:layout_width="0dp"
+        android:layout_height="103dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:text="We are one of the most innovative motor insurance companies in Sri Lanka, offering 'insurance on the go'!
+We provide polices that's created for your needs, not ours. This is your one-stop insurance shop for all your vehicles.
+Trusted by over 50 million motorists worldwide to cover their values set of wheels, We offers a comprehensive motor insurance cover that's just right
+for your vehicle and your lifestyle. Invest in yourself and make the switch to a simpler insurance provider with our safe and reliable policies."
+
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/include"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/include"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.789" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="369dp"
+        android:layout_height="56dp"
+        android:text="Get Start"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_welcome"
+        app:layout_constraintVertical_bias="0.852" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

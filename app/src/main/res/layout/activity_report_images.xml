@@ -123,7 +123,7 @@
         android:id="@+id/btn_upload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/purple_700"
+        android:background="@color/blue"
         android:text="Upload Images"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/include"

@@ -60,7 +60,7 @@ class SplashActivity : AppCompatActivity() {
                     // Record the fact that the app has been started at least once
                     settings.edit().putBoolean("firstTime", false).commit()
                 } else {
-                    startActivity(Intent(this, DashboardActivity::class.java))
+                    startActivity(Intent(this, LoginActivity::class.java))
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                     finish()
                 }

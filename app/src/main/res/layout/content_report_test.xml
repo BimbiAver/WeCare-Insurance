@@ -51,7 +51,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/txt_help"
+        android:id="@+id/txtLoginHelp"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:text="@string/hyperlink3"

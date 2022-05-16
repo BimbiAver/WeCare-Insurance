@@ -38,16 +38,6 @@
             android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
-       <!-- <activity
-            android:name=".ResetPasswordSecondActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />-->
-        <activity
-            android:name=".ResetPasswordActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".VehicleDetailsActivity"
             android:exported="false"
@@ -139,11 +129,6 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".RegistersecondActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait"
@@ -169,11 +154,6 @@
             android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
-       <!-- <activity
-            android:name=".WelcomeActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />-->
         <activity
             android:name=".ContentLoginActivity"
             android:exported="false"
@@ -189,13 +169,6 @@
             android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
-        <!--
- <activity
-            android:name=".BackgroundWelcomeActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        -->
     </application>
 
 </manifest>

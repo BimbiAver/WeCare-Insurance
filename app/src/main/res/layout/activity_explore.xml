@@ -60,6 +60,7 @@ for your vehicle and your lifestyle. Invest in yourself and make the switch to a
         android:id="@+id/btnGetStarted"
         android:layout_width="369dp"
         android:layout_height="56dp"
+        android:backgroundTint="@color/yellow"
         android:text="Get Started"
         android:textAllCaps="false"
         android:textColor="@color/black"

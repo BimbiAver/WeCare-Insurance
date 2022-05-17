@@ -158,6 +158,7 @@
         android:layout_width="357dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
+        android:backgroundTint="@color/yellow"
         android:text="Next"
         android:textAllCaps="false"
         android:textColor="@color/black"

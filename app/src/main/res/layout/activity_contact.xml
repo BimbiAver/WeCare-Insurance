@@ -19,19 +19,23 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/btn_email"
-        android:layout_width="125dp"
+        android:id="@+id/btnSupEmail"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/yellow"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
         android:text="Email Us"
+        android:textAlignment="center"
+        android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.794" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSupCall" />
 
     <TextView
         android:id="@+id/txt_address"
@@ -46,17 +50,22 @@
         app:layout_constraintTop_toTopOf="@+id/include" />
 
     <Button
-        android:id="@+id/btn_call"
-        android:layout_width="130dp"
+        android:id="@+id/btnSupCall"
+        android:layout_width="0dp"
         android:layout_height="57dp"
-        android:text="call Us"
+        android:backgroundTint="@color/yellow"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Call Us"
+        android:textAlignment="center"
+        android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="17sp"
         android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnSupEmail"
+        app:layout_constraintStart_toStartOf="@+id/btnSupEmail"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.652" />
 
@@ -70,7 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_email"
+        app:layout_constraintTop_toBottomOf="@id/btnSupEmail"
         app:layout_constraintVertical_bias="0.89" />
 
     <TextView
@@ -88,7 +97,7 @@
 
 
     <ImageButton
-        android:id="@+id/img_btn_back_vehicle"
+        android:id="@+id/imgBtnSupBack"
         android:layout_width="39dp"
         android:layout_height="44dp"
         android:layout_marginTop="16dp"
@@ -105,15 +114,14 @@
         android:id="@+id/txt_report"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="28dp"
         android:text="Contact Us"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txt_address"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.207"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnSupBack"
         app:layout_constraintTop_toTopOf="@+id/include"
         app:layout_constraintVertical_bias="0.026" />
 

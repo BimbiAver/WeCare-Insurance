@@ -12,12 +12,12 @@
         <TableRow android:padding="10dp" >
 
             <TextView
-                android:textSize="11dp"
-                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="NIC" />
+                android:text="NIC"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -25,169 +25,174 @@
                 android:layout_weight="1"
                 android:text=":"
                 android:textColor="@color/black"
-                android:textSize="11dp" />
+                android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/txt_nic"
-                android:textSize="11dp"
+                android:id="@+id/txtProfNIC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="20001514841" />
+                android:layout_weight="5"
+                android:textSize="16sp" />
         </TableRow>
 
         <TableRow  android:padding="10dp">
 
             <TextView
-                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="License Number"
                 android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="License Number" />
-            <TextView
-                android:textSize="11dp"
+                android:text=":"
                 android:textColor="@color/black"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text=":" />
+                android:textSize="16sp" />
+
             <TextView
-                android:id="@+id/txt_license_number"
-                android:textSize="11dp"
+                android:id="@+id/txtProfLicenseNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="B4567891" />
+                android:layout_weight="5"
+                android:textSize="16sp" />
 
         </TableRow>
         <TableRow android:padding="10dp">
 
             <TextView
-                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name"
                 android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Full Name" />
-            <TextView
-                android:textSize="11dp"
+                android:text=":"
                 android:textColor="@color/black"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text=":" />
+                android:textSize="16sp" />
+
             <TextView
-                android:id="@+id/txt_full_name"
-                android:textSize="11dp"
+                android:id="@+id/txtProfName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Heshan Chamindu \nKarunarathne Silva" />
+                android:layout_weight="5"
+                android:textSize="16sp" />
 
         </TableRow>
 
         <TableRow  android:padding="10dp">
 
             <TextView
-                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date of Birth"
                 android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Date of Birth" />
-            <TextView
-                android:textSize="11dp"
+                android:text=":"
                 android:textColor="@color/black"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text=":" />
+                android:textSize="16sp" />
+
             <TextView
-                android:id="@+id/txt_dob"
-                android:textSize="11dp"
+                android:id="@+id/txtProfDOB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="1999-12-24" />
+                android:layout_weight="5"
+                android:textSize="16sp" />
 
         </TableRow>
 
         <TableRow  android:padding="10dp">
 
             <TextView
-                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gender"
                 android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Gender" />
-            <TextView
-                android:textSize="11dp"
+                android:text=":"
                 android:textColor="@color/black"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text=":" />
+                android:textSize="16sp" />
+
             <TextView
-                android:id="@+id/txt_gender"
-                android:textSize="11dp"
+                android:id="@+id/txtProfGender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Male" />
+                android:layout_weight="5"
+                android:textSize="16sp" />
 
         </TableRow>
 
     <TableRow  android:padding="10dp">
 
         <TextView
-            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Address"
             android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Contact Number" />
-        <TextView
-            android:textSize="11dp"
+            android:text=":"
             android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=":" />
+            android:textSize="16sp" />
+
         <TextView
-            android:id="@+id/txt_address"
-            android:textSize="11dp"
+            android:id="@+id/txtProfAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="186/2,\nHeenatiyna, \nMinuwangoda" />
+            android:layout_weight="5"
+            android:textSize="16sp" />
 
     </TableRow>
 
     <TableRow  android:padding="10dp">
 
         <TextView
-            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mobile Number"
             android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Contact Number" />
-        <TextView
-            android:textSize="11dp"
+            android:text=":"
             android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=":" />
+            android:textSize="16sp" />
+
         <TextView
-            android:id="@+id/txt_contact_number"
-            android:textSize="11dp"
+            android:id="@+id/txtProfMobNum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="+94 77 862 9491" />
+            android:layout_weight="5"
+            android:textSize="16sp" />
 
     </TableRow>
 

@@ -17,6 +17,7 @@ class DashboardActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var txtDashboardGreet: TextView
     private lateinit var btnLogOut: Button
+    private lateinit var imgBtnProfile: ImageButton
     private lateinit var cdViewReportCase: CardView
     private lateinit var cdViewPrevCases: CardView
     private lateinit var cdViewRegVehicles: CardView
@@ -52,6 +53,11 @@ class DashboardActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
             }
+            R.id.imgBtnProfile -> {
+                val intent = Intent(this, ProfileActivity::class.java)
+                startActivity(intent)
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+            }
         }
     }
 
@@ -65,6 +71,7 @@ class DashboardActivity : AppCompatActivity(), View.OnClickListener {
 
         txtDashboardGreet = findViewById(R.id.txtDashboardGreet)
         btnLogOut = findViewById(R.id.btnLogOut)
+        imgBtnProfile = findViewById(R.id.imgBtnProfile)
         cdViewReportCase = findViewById(R.id.cdViewReportCase)
         cdViewPrevCases = findViewById(R.id.cdViewPrevCases)
         cdViewRegVehicles = findViewById(R.id.cdViewRegVehicles)
@@ -75,6 +82,7 @@ class DashboardActivity : AppCompatActivity(), View.OnClickListener {
 
         // Instantiate the setOnClickListener(s) at runtime
         btnLogOut.setOnClickListener(this)
+        imgBtnProfile.setOnClickListener(this)
         cdViewReportCase.setOnClickListener(this)
         cdViewPrevCases.setOnClickListener(this)
         cdViewRegVehicles.setOnClickListener(this)

@@ -9,61 +9,6 @@
     android:paddingLeft="10dp"
     android:paddingRight="10dp">
 
-    <!--<TableRow  android:padding="10dp">
-
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="" />
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Select the Vehicle" />
-
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="" />
-
-    </TableRow>
-
-    <TableRow  android:padding="10dp">
-
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="" />
-
-        <AutoCompleteTextView
-            android:id="@+id/txt_auto_complete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Eng"
-            android:textAlignment="textEnd" />
-
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="" />
-
-    </TableRow>-->
-
     <TableRow android:padding="10dp" >
 
         <TextView
@@ -72,7 +17,7 @@
             android:layout_weight="1"
             android:text="Vehicle Type"
             android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -83,12 +28,11 @@
             android:textSize="11dp" />
 
         <TextView
-            android:id="@+id/txt_vehicle_type"
+            android:id="@+id/txtVDType"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Motorcycle"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
     </TableRow>
 
     <TableRow  android:padding="10dp">
@@ -99,7 +43,7 @@
             android:layout_weight="1"
             android:text="Vehicle Make"
             android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
         <TextView
             android:textSize="11dp"
             android:textColor="@color/black"
@@ -109,12 +53,11 @@
             android:text=":" />
 
         <TextView
-            android:id="@+id/txt_vehicle_make"
+            android:id="@+id/txtVDMake"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Honda"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
     </TableRow>
     <TableRow android:padding="10dp">
@@ -125,7 +68,7 @@
             android:layout_weight="1"
             android:text="Vehicle Model"
             android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
         <TextView
             android:textSize="11dp"
             android:textColor="@color/black"
@@ -135,12 +78,11 @@
             android:text=":" />
 
         <TextView
-            android:id="@+id/txt_vehicle_model"
+            android:id="@+id/txtVDModel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Dio"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
     </TableRow>
 
@@ -152,7 +94,7 @@
             android:layout_weight="1"
             android:text="Manufactured Year"
             android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
         <TextView
             android:textSize="11dp"
             android:textColor="@color/black"
@@ -162,12 +104,11 @@
             android:text=":" />
 
         <TextView
-            android:id="@+id/txt_manufactured_year"
+            android:id="@+id/txtVDManufacYear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="2015"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
     </TableRow>
 
@@ -179,7 +120,7 @@
             android:layout_weight="1"
             android:text="Transmission"
             android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
         <TextView
             android:textSize="11dp"
             android:textColor="@color/black"
@@ -189,12 +130,11 @@
             android:text=":" />
 
         <TextView
-            android:id="@+id/txt_transmission"
+            android:id="@+id/txtVDTransmission"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Auto"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
     </TableRow>
 
@@ -206,7 +146,7 @@
             android:layout_weight="1"
             android:text="Fuel Type"
             android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
         <TextView
             android:textSize="11dp"
             android:textColor="@color/black"
@@ -216,12 +156,11 @@
             android:text=":" />
 
         <TextView
-            android:id="@+id/txt_fuel_type"
+            android:id="@+id/txtVDFuel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Petrol"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
     </TableRow>
 
@@ -233,7 +172,7 @@
             android:layout_weight="1"
             android:text="Engine Capacity"
             android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
         <TextView
             android:textSize="11dp"
             android:textColor="@color/black"
@@ -243,12 +182,11 @@
             android:text=":" />
 
         <TextView
-            android:id="@+id/txt_engine_capacity"
+            android:id="@+id/txtVDEngCapacity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="110cc"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
     </TableRow>
     <TableRow  android:padding="10dp">
@@ -259,7 +197,7 @@
             android:layout_weight="1"
             android:text="Engine Number"
             android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
         <TextView
             android:textSize="11dp"
             android:textColor="@color/black"
@@ -269,12 +207,11 @@
             android:text=":" />
 
         <TextView
-            android:id="@+id/txt_engine_number"
+            android:id="@+id/txtVDEngNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="1P390MB"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
     </TableRow>
     <TableRow  android:padding="10dp">
@@ -285,7 +222,7 @@
             android:layout_weight="1"
             android:text="Chassis Number"
             android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
         <TextView
             android:textSize="11dp"
             android:textColor="@color/black"
@@ -295,24 +232,12 @@
             android:text=":" />
 
         <TextView
-            android:id="@+id/txt_chassis_number"
+            android:id="@+id/txtVDChassisNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="16110196"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
     </TableRow>
-
-
-    <!-- <EditText
-         android:textSize="11dp"
-         android:id="@+id/edit_txt_nic_number"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:background="@drawable/borderstyle"
-         android:inputType="textPersonName"
-         android:text="1456987" />-->
-
 
 </TableLayout>

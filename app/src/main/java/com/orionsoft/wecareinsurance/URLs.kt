@@ -6,4 +6,5 @@ class URLs {
     val usrCheck = rootURL + "check-user.php"
     val sendSMS = rootURL + "send-sms/send_sms.php"
     val getVehicles = rootURL + "get-vehicles.php"
+    val getVehicleDetails = rootURL + "get-vehicle-details.php"
 }

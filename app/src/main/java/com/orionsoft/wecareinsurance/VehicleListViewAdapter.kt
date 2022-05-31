@@ -1,6 +1,7 @@
 package com.orionsoft.wecareinsurance
 
 import android.app.Activity
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +9,7 @@ import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.orionsoft.wecareinsurance.model.Vehicle
 
-class VehicleListViewAdapter(private val context: Activity, private val arrayList: ArrayList<Vehicle>): ArrayAdapter<Vehicle>(context, R.layout.vehicle_list_items, arrayList) {
+class VehicleListViewAdapter(private val aContext: Context, private val arrayList: ArrayList<Vehicle>): ArrayAdapter<Vehicle>(aContext, R.layout.vehicle_list_items, arrayList) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
 

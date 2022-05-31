@@ -1,12 +1,11 @@
 package com.orionsoft.wecareinsurance
 
 import android.app.ProgressDialog
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
-import android.widget.ImageButton
-import android.widget.ListView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.RequestQueue
 import com.android.volley.Response
@@ -17,6 +16,8 @@ import org.json.JSONException
 import org.json.JSONObject
 
 class RegisteredVehiclesActivity : AppCompatActivity(), View.OnClickListener {
+
+    private var vehicleNo = ""
 
     private lateinit var imgBtnRegVehBack: ImageButton
 
@@ -60,8 +61,8 @@ class RegisteredVehiclesActivity : AppCompatActivity(), View.OnClickListener {
         progressDialog = ProgressDialog(this)
         progressDialog.setMessage("Loading...")
 
-        // Initializing listview and medicalDetailsList
-        listView = findViewById<View>(R.id.listViewRegVehicles) as ListView
+        // Initializing listview and vehicleArrayList
+        listView = findViewById<View>(R.id.listViewRegVehicles) as ListView?
         vehicleArrayList = ArrayList()
 
         // Fetch vehicles from the database
@@ -78,6 +79,22 @@ class RegisteredVehiclesActivity : AppCompatActivity(), View.OnClickListener {
             }
         }, 3000)
 
+        // ListView Items LongPress Menu - OnItemLongClickListener
+        listView!!.onItemClickListener =
+            AdapterView.OnItemClickListener() { adapterView, view, i, l ->
+                val idView = view.findViewById<TextView>(R.id.txtRegVehNo)
+                vehicleNo = idView.text.toString()
+                val intent = Intent(this, VehicleDetailsActivity::class.java)
+                // Bind vehicle number
+                intent.putExtra(
+                    "vehicleNo",
+                    vehicleNo
+                )
+                startActivity(intent)
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                false
+            }
+
     }
 
 //        -----------------------------------------------------------------------------------------------
@@ -92,7 +109,7 @@ class RegisteredVehiclesActivity : AppCompatActivity(), View.OnClickListener {
     // Get all the vehicles registered under the user's nic
     private fun getVehicles(nic: String) {
         stringRequest = object : StringRequest(
-            Method.POST, urls.usrCheck,
+            Method.POST, urls.getVehicles,
             Response.Listener { response -> // response
                 try {
                     jsonObject = JSONObject(response)
@@ -141,6 +158,13 @@ class RegisteredVehiclesActivity : AppCompatActivity(), View.OnClickListener {
                 // Adding the vehicle to vehicleDetailsList
                 vehicleArrayList!!.add(vehicle)
             }
+            // Creating custom adapter object
+            val vehicleListViewAdapter = VehicleListViewAdapter(
+                applicationContext,
+                vehicleArrayList
+            )
+            // Adding the adapter to the ListView
+            listView!!.setAdapter(vehicleListViewAdapter)
         } catch (e: JSONException) {
             e.printStackTrace()
         }

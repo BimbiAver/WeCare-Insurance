@@ -90,7 +90,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                         sharedPrefManager!!.save_String("address",customer!!.address)
                         sharedPrefManager!!.save_String("mobNumber",customer!!.mobNumber)
                         sharedPrefManager!!.save_String("loginStatus","1")
-                        // Direct to the Dashboard activity
+                        // Re-direct to the Dashboard activity
                         val intent = Intent(this, DashboardActivity::class.java)
                         startActivity(intent)
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
@@ -146,7 +146,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
 //        -----------------------------------------------------------------------------------------------
 
-    //        -----------------------------------------------------------------------------------------------
     override fun onBackPressed() {
         finishAffinity() // Removes the connection of the existing activity to its stack
         finish() // The method onDestroy() is executed & exit the application

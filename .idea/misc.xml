@@ -10,7 +10,7 @@
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_profile.xml" value="0.25" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
-        <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_registered_vehicles.xml" value="0.20416666666666666" />
+        <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_registered_vehicles.xml" value="0.25" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_registersecond.xml" value="0.20416666666666666" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_report_case_details.xml" value="0.20416666666666666" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_report_driver_details.xml" value="0.20416666666666666" />
@@ -20,10 +20,14 @@
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_report_thirdparty.xml" value="0.20416666666666666" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_report_vehicle.xml" value="0.20416666666666666" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_vehicle_details.xml" value="0.20416666666666666" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_welcome.xml" value="0.20416666666666666" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_welcomesecond.xml" value="0.20416666666666666" />
+        <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/content_background.xml" value="0.20416666666666666" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/content_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/table_profile.xml" value="0.33" />
+        <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/content_previous_cases_cardview.xml" value="0.20416666666666666" />
+        <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/table_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/vehicle_list_items.xml" value="0.25" />
       </map>
     </option>
   </component>

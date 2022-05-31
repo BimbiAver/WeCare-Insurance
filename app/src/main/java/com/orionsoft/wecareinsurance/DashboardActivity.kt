@@ -94,6 +94,7 @@ class DashboardActivity : AppCompatActivity(), View.OnClickListener {
     // When the BACK button is pressed, the activity on the stack is restarted
     override fun onRestart() {
         super.onRestart()
+        finishAffinity()
         finish()
         startActivity(intent)
     }

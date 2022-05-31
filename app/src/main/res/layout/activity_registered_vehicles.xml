@@ -31,363 +31,49 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
+
     <ImageButton
-        android:id="@+id/img_btn_back_vehicle"
+        android:id="@+id/imgBtnRegVehBack"
         android:layout_width="39dp"
         android:layout_height="44dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/ic_action_back"
-        app:layout_constraintBottom_toBottomOf="@+id/cardView_case3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
 
     <TextView
         android:id="@+id/txt_report"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
         android:text="Registered Vehicles"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/cardView_case3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.277"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include"
-        app:layout_constraintVertical_bias="0.124"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBtnRegVehBack"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnRegVehBack"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnRegVehBack"
         tools:ignore="UnknownIdInLayout" />
 
-    <TextView
-        android:id="@+id/txt_need_already"
-        android:layout_width="72dp"
-        android:layout_height="25dp"
-        android:layout_marginBottom="4dp"
-        android:text="Need any"
-        android:textSize="16sp"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="@+id/include"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.377"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include4"
-        app:layout_constraintVertical_bias="0.946" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/txtLoginHelp"
-        android:layout_width="50dp"
-        android:layout_height="29dp"
-        android:text="@string/hyperlink3"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
-        app:layout_constraintStart_toEndOf="@+id/txt_need_already"
-        app:layout_constraintTop_toTopOf="@+id/include4"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="UnknownIdInLayout" />
-
-    <TextView
-        android:id="@+id/txt_vehinum1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vehicle Number        :   "
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtLoginHelp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.276"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include"
-        app:layout_constraintVertical_bias="0.205" />
-
-    <TextView
-        android:id="@+id/txt_vehinum2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vehicle Number        :   "
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtLoginHelp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.288"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include"
-        app:layout_constraintVertical_bias="0.492" />
-
-    <TextView
-        android:id="@+id/txt_vehinum3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vehicle Number        :   "
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtLoginHelp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include"
-        app:layout_constraintVertical_bias="0.754" />
-
-    <TextView
-        android:id="@+id/txt_vehimake1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vehicle Make             :   "
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtLoginHelp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.278"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include"
-        app:layout_constraintVertical_bias="0.267" />
-
-    <TextView
-        android:id="@+id/txt_vehimake3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vehicle Make            :   "
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtLoginHelp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.304"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include"
-        app:layout_constraintVertical_bias="0.817" />
-
-    <TextView
-        android:id="@+id/txt_vehimake2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vehicle Make             :   "
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtLoginHelp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.293"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include"
-        app:layout_constraintVertical_bias="0.552" />
-
-    <TextView
-        android:id="@+id/txt_vehimo1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vehicle Model           :   "
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtLoginHelp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.291"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include"
-        app:layout_constraintVertical_bias="0.333" />
-
-    <TextView
-        android:id="@+id/txt_vehimo2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vehicle Model            :   "
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtLoginHelp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.312"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include"
-        app:layout_constraintVertical_bias="0.613" />
-
-    <TextView
-        android:id="@+id/txt_vehimo3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vehicle Model           :   "
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtLoginHelp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.291"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include"
-        app:layout_constraintVertical_bias="0.88" />
-
-    <TextView
-        android:id="@+id/txt_wp87"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WP BEA-8768"
-        android:textColor="@color/Gray2"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txt_vehinum1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/txt_vehinum1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/txt_honda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Honda"
-        android:textColor="@color/Gray2"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txt_vehimake1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/txt_vehimake1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/txt_dio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dio"
-        android:textColor="@color/Gray2"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txt_vehimo1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.008"
-        app:layout_constraintStart_toEndOf="@+id/txt_vehimo1"
-        app:layout_constraintTop_toTopOf="@+id/txt_honda"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/txt_more_detail1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hyperlink6"
-        android:textColor="@color/blue"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtLoginHelp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.74"
-        app:layout_constraintStart_toStartOf="@+id/txt_vehimo1"
-        app:layout_constraintTop_toTopOf="@+id/txt_wp87"
-        app:layout_constraintVertical_bias="0.207" />
-
-    <TextView
-        android:id="@+id/txt_more_detail2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hyperlink6"
-        android:textColor="@color/blue"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtLoginHelp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.738"
-        app:layout_constraintStart_toStartOf="@+id/txt_vehimo1"
-        app:layout_constraintTop_toTopOf="@+id/txt_wp87"
-        app:layout_constraintVertical_bias="0.553" />
-
-    <TextView
-        android:id="@+id/txt_more_details_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hyperlink6"
-        android:textColor="@color/blue"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtLoginHelp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.741"
-        app:layout_constraintStart_toStartOf="@+id/txt_vehimo1"
-        app:layout_constraintTop_toTopOf="@+id/txt_wp87"
-        app:layout_constraintVertical_bias="0.89" />
-
-    <TextView
-        android:id="@+id/txt_wp09"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WP CEF=0968"
-        android:textColor="@color/Gray2"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txt_vehinum2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
-        app:layout_constraintStart_toEndOf="@+id/txt_vehinum2"
-        app:layout_constraintTop_toBottomOf="@+id/txt_more_detail1"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/txt_bmw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BMW"
-        android:textColor="@color/Gray2"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txt_vehimake2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.028"
-        app:layout_constraintStart_toEndOf="@+id/txt_vehimake2"
-        app:layout_constraintTop_toTopOf="@+id/txt_wp09"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/txt_m4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="M4"
-        android:textColor="@color/Gray2"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txt_vehimo2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/txt_vehimo2"
-        app:layout_constraintTop_toTopOf="@+id/txt_bmw"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/txt_cs00"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CS0003"
-        android:textColor="@color/Gray2"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txt_vehinum3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
-        app:layout_constraintStart_toEndOf="@+id/txt_vehinum3"
-        app:layout_constraintTop_toBottomOf="@+id/txt_more_detail2"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/txt_wpcaf88"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WP CAF-8854"
-        android:textColor="@color/Gray2"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txt_vehimo3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
-        app:layout_constraintStart_toEndOf="@+id/txt_vehimake3"
-        app:layout_constraintTop_toTopOf="@+id/txt_cs00"
-        app:layout_constraintVertical_bias="0.671" />
-
-    <TextView
-        android:id="@+id/txt_202221"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2022-01-21"
-        android:textColor="@color/Gray2"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txt_vehimo3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
-        app:layout_constraintStart_toEndOf="@+id/txt_vehimo3"
-        app:layout_constraintTop_toTopOf="@+id/txt_wpcaf88"
-        app:layout_constraintVertical_bias="1.0" />
+        <ListView
+            android:id="@+id/listViewRegVehicles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

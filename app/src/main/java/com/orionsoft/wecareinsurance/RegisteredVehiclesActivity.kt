@@ -82,7 +82,7 @@ class RegisteredVehiclesActivity : AppCompatActivity(), View.OnClickListener {
             }
         }, 3000)
 
-        // ListView Items LongPress Menu - OnItemLongClickListener
+        // ListView Items OnClick Menu - OnItemClickListener
         listView!!.onItemClickListener =
             AdapterView.OnItemClickListener() { adapterView, view, i, l ->
                 val idView = view.findViewById<TextView>(R.id.txtRegVehNo)

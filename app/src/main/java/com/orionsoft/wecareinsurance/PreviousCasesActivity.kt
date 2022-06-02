@@ -6,9 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
-import android.widget.ImageButton
-import android.widget.ListView
-import android.widget.Toast
+import android.widget.*
 import com.android.volley.RequestQueue
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
@@ -81,6 +79,22 @@ class PreviousCasesActivity : AppCompatActivity(), View.OnClickListener {
                 loadCaseDetailsList() // Fetch and load data to the ListView
             }
         }, 3000)
+
+        // ListView Items OnClick Menu - OnItemClickListener
+        listView!!.onItemClickListener =
+            AdapterView.OnItemClickListener() { adapterView, view, i, l ->
+                val idView = view.findViewById<TextView>(R.id.txtPreCaseNo)
+                caseNo = idView.text.toString()
+                val intent = Intent(this, CaseDetailsActivity::class.java)
+                // Bind case number
+                intent.putExtra(
+                    "caseNo",
+                    caseNo
+                )
+                startActivity(intent)
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                false
+            }
     }
 
 

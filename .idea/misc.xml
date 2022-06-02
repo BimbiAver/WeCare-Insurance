@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/drawable/borderstyle.xml" value="0.1525" />
-        <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_case_details.xml" value="0.33" />
+        <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_case_details.xml" value="0.25" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_contact.xml" value="0.25" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_explore.xml" value="0.25" />
@@ -26,12 +26,14 @@
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_welcome.xml" value="0.20416666666666666" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/activity_welcomesecond.xml" value="0.20416666666666666" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/content_background.xml" value="0.20416666666666666" />
-        <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/content_case_details_table.xml" value="0.20416666666666666" />
+        <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/content_cardview.xml" value="0.20416666666666666" />
+        <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/content_case_details_table.xml" value="0.25" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/content_login.xml" value="0.20416666666666666" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/content_previous_cases_cardview.xml" value="0.20416666666666666" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/content_vehicle_details_table.xml" value="0.25" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/previous_cases_list_items.xml" value="0.25" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/table_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/table_report_case.xml" value="0.25" />
         <entry key="..\:/My-Projects/Mobile-Application/WeCare-Insurance/app/src/main/res/layout/vehicle_list_items.xml" value="0.25" />
       </map>
     </option>

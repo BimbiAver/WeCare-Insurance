@@ -128,8 +128,6 @@ class VehicleDetailsActivity : AppCompatActivity(), View.OnClickListener {
                 try {
                     jsonObject = JSONObject(response)
 
-                    // Creating a new user object
-
                     // Creating a new vehicle object
                     if (jsonObject!!.getString("message") == "Request Successfully Completed!") {
                         vehicle = Vehicle(
@@ -145,6 +143,7 @@ class VehicleDetailsActivity : AppCompatActivity(), View.OnClickListener {
                             jsonObject!!.getString("chassis_no")
                         )
 
+                        // Creating a new policy object
                         policy = Policy(
                             jsonObject!!.getString("policy_no"),
                             jsonObject!!.getString("cover_period"),

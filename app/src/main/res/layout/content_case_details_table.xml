@@ -1,318 +1,940 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginTop="20dp"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp">
+    android:layout_height="wrap_content"
+    android:fadeScrollbars="false"
+    android:fillViewport="true">
 
-    <!--<TableRow  android:padding="10dp">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
 
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="" />
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Select the Vehicle" />
+        <TableRow android:padding="7dp">
 
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Status"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
-    </TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="11dp"
+                android:textStyle="bold" />
 
-    <TableRow  android:padding="10dp">
+            <TextView
+                android:id="@+id/txtCDStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+        </TableRow>
 
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="" />
+        <TableRow android:padding="7dp">
 
-        <AutoCompleteTextView
-            android:id="@+id/txt_auto_complete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Eng"
-            android:textAlignment="textEnd" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Date &amp; Time"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
 
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
 
-    </TableRow>-->
+            <TextView
+                android:id="@+id/txtCDDateTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
 
-    <TableRow android:padding="10dp" >
+        </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Case Number"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
+        <TableRow android:padding="7dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=":"
-            android:textColor="@color/black"
-            android:textSize="11dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Vehicle Number"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/txt_vehicle_type"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="CS0001"
-            android:textSize="14sp" />
-    </TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
 
-    <TableRow  android:padding="10dp">
+            <TextView
+                android:id="@+id/txtCDVehicleNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Date of Accident"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=":" />
+        </TableRow>
 
-        <TextView
-            android:id="@+id/txt_vehicle_make"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="2022-03-29"
-            android:textSize="14sp" />
+        <TableRow android:padding="7dp">
 
-    </TableRow>
-    <TableRow android:padding="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Mileage"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Time of Accident"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=":" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
 
-        <TextView
-            android:id="@+id/txt_vehicle_model"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="16:30:00"
-            android:textSize="14sp" />
+            <TextView
+                android:id="@+id/txtCDMileage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
 
-    </TableRow>
+        </TableRow>
 
-    <TableRow  android:padding="10dp">
+        <TableRow android:padding="7dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Location"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=":" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Location"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/txt_manufactured_year"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="R2CR+GJ\nHomagama"
-            android:textSize="14sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
 
-    </TableRow>
+            <TextView
+                android:id="@+id/txtCDLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
 
-    <TableRow  android:padding="10dp">
+        </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Cause of Damage"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=":" />
+        <TableRow android:padding="7dp">
 
-        <TextView
-            android:id="@+id/txt_transmission"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Falling Asleep\nMechanical Failure\nFire"
-            android:textSize="14sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Damage"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
 
-    </TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
 
-    <TableRow  android:padding="10dp">
+            <TextView
+                android:id="@+id/txtCDDamage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Extent Damage "
-            android:textColor="@color/black"
-            android:textSize="14sp" />
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=":" />
+        </TableRow>
 
-        <TextView
-            android:id="@+id/txt_fuel_type"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Wind Screen\nBroken\nSide Door\nDamage"
-            android:textSize="14sp" />
+        <TableRow android:padding="7dp">
 
-    </TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Other Reason"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
 
-    <TableRow  android:padding="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Vehicle Type"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=":" />
+            <TextView
+                android:id="@+id/txtCDOtherReason"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/txt_engine_capacity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Motorcycle"
-            android:textSize="14sp" />
+        </TableRow>
 
-    </TableRow>
-    <TableRow  android:padding="10dp">
+        <TableRow android:padding="7dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Vehicle Make"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=":" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Extent Damage"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/txt_engine_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Honda"
-            android:textSize="14sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
 
-    </TableRow>
-    <TableRow  android:padding="10dp">
+            <TextView
+                android:id="@+id/txtCDExtDamage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Vehicle Model"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
-        <TextView
-            android:textSize="11dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=":" />
+        </TableRow>
 
-        <TextView
-            android:id="@+id/txt_chassis_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Dio"
-            android:textSize="14sp" />
+        <TableRow
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="#00068E"
+            android:padding="1dp" />
 
-    </TableRow>
+        <TableRow android:padding="7dp">
 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Policy Number"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
 
-        <!-- <EditText
-             android:textSize="11dp"
-             android:id="@+id/edit_txt_nic_number"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:background="@drawable/borderstyle"
-             android:inputType="textPersonName"
-             android:text="1456987" />-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
 
+            <TextView
+                android:id="@+id/txtCDPolicyNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
 
-</TableLayout>
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Claim Number"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDClaimNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Cover Period"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDCoverPeriod"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Sum Insured"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDSumInsured"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Type"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDInsType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Cover Note"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDCoverNote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Debit Outstanding"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDDebtOut"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="#00068E"
+            android:padding="1dp" />
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Driver's NIC No."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDDrivNIC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Driver's License No."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDDrivLicenseNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Vehicle Categories"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDDrivVehCat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="License Expiry Date"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDDrivLicenseExp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Driver's Name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDDrivName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Driver's Address"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDDrivAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Driver's Contact No."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDDrivConNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="#00068E"
+            android:padding="1dp" />
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="T/P Vehicle No."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDTPVehNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="T/P Vehicle Brand"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDTPVehBrand"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="T/P Driver's Name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDTPDrivName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="T/P Owner's Name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDTPOwnName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="T/P Address"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDTPAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="T/P Damages"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDTPDamages"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow android:padding="7dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="T/P Other Details"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/txtCDTPOtherDetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textSize="15sp" />
+
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>

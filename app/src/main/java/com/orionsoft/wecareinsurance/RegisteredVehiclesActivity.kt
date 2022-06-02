@@ -11,6 +11,7 @@ import com.android.volley.RequestQueue
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.orionsoft.wecareinsurance.model.Policy
 import com.orionsoft.wecareinsurance.model.Vehicle
 import org.json.JSONException
 import org.json.JSONObject
@@ -23,6 +24,7 @@ class RegisteredVehiclesActivity : AppCompatActivity(), View.OnClickListener {
 
     var listView: ListView? = null
     private lateinit var vehicleArrayList: ArrayList<Vehicle>
+    private lateinit var policyArrayList: ArrayList<Policy>
 
     lateinit var progressDialog: ProgressDialog
 
@@ -64,6 +66,7 @@ class RegisteredVehiclesActivity : AppCompatActivity(), View.OnClickListener {
         // Initializing listview and vehicleArrayList
         listView = findViewById<View>(R.id.listViewRegVehicles) as ListView?
         vehicleArrayList = ArrayList()
+        policyArrayList = ArrayList()
 
         // Fetch vehicles from the database
         getVehicles(sharedPrefManager!!.getPreferenceString("nic").toString())
@@ -142,26 +145,25 @@ class RegisteredVehiclesActivity : AppCompatActivity(), View.OnClickListener {
             for (i in 0 until vehicleArray.length()) {
                 // Getting the JSON object of the particular index inside the array
                 val vehObject = vehicleArray.getJSONObject(i)
+                val policyObject = vehicleArray.getJSONObject(i)
                 // Creating a vehicle object and giving them the values from json object
                 val vehicle = Vehicle(
                     vehObject.getString("vehicle_no"),
-                    vehObject.getString("vehicle_type"),
                     vehObject.getString("make"),
-                    vehObject.getString("model"),
-                    vehObject.getString("manufac_year"),
-                    vehObject.getString("transmission"),
-                    vehObject.getString("fuel"),
-                    vehObject.getString("eng_capacity"),
-                    vehObject.getString("eng_no"),
-                    vehObject.getString("chassis_no")
+                    vehObject.getString("model")
+                )
+                val policy = Policy(
+                    policyObject.getString("policy_no")
                 )
                 // Adding the vehicle to vehicleDetailsList
                 vehicleArrayList!!.add(vehicle)
+                policyArrayList!!.add(policy)
             }
             // Creating custom adapter object
             val vehicleListViewAdapter = VehicleListViewAdapter(
                 applicationContext,
-                vehicleArrayList
+                vehicleArrayList,
+                policyArrayList
             )
             // Adding the adapter to the ListView
             listView!!.setAdapter(vehicleListViewAdapter)

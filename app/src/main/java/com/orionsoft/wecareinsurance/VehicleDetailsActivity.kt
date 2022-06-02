@@ -12,6 +12,7 @@ import com.android.volley.RequestQueue
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.orionsoft.wecareinsurance.model.Policy
 import com.orionsoft.wecareinsurance.model.Vehicle
 import org.json.JSONException
 import org.json.JSONObject
@@ -30,6 +31,10 @@ class VehicleDetailsActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var txtVDEngCapacity: TextView
     private lateinit var txtVDEngNo: TextView
     private lateinit var txtVDChassisNo: TextView
+    private lateinit var txtVDPolicyNo: TextView
+    private lateinit var txtVDCoverPeriod: TextView
+    private lateinit var txtVDSumInsured: TextView
+    private lateinit var txtVDInsType: TextView
 
     lateinit var progressDialog: ProgressDialog
 
@@ -39,6 +44,7 @@ class VehicleDetailsActivity : AppCompatActivity(), View.OnClickListener {
     private var jsonObject : JSONObject? = null
 
     var vehicle: Vehicle? = null
+    var policy: Policy? = null
 
 //        -----------------------------------------------------------------------------------------------
 
@@ -69,6 +75,10 @@ class VehicleDetailsActivity : AppCompatActivity(), View.OnClickListener {
         txtVDEngCapacity = findViewById(R.id.txtVDEngCapacity)
         txtVDEngNo = findViewById(R.id.txtVDEngNo)
         txtVDChassisNo = findViewById(R.id.txtVDChassisNo)
+        txtVDPolicyNo = findViewById(R.id.txtVDPolicyNo)
+        txtVDCoverPeriod = findViewById(R.id.txtVDCoverPeriod)
+        txtVDSumInsured = findViewById(R.id.txtVDSumInsured)
+        txtVDInsType = findViewById(R.id.txtVDInsType)
 
         // Retrieve vehicleNo from previous activity
         var vehicleNo = intent.getStringExtra("vehicleNo").toString()
@@ -134,6 +144,13 @@ class VehicleDetailsActivity : AppCompatActivity(), View.OnClickListener {
                             jsonObject!!.getString("eng_no"),
                             jsonObject!!.getString("chassis_no")
                         )
+
+                        policy = Policy(
+                            jsonObject!!.getString("policy_no"),
+                            jsonObject!!.getString("cover_period"),
+                            jsonObject!!.getString("sum_insured"),
+                            jsonObject!!.getString("type")
+                        )
                     }
 
                 } catch (e: JSONException) {
@@ -167,5 +184,9 @@ class VehicleDetailsActivity : AppCompatActivity(), View.OnClickListener {
         txtVDEngCapacity.setText(vehicle!!.engCapacity)
         txtVDEngNo.setText(vehicle!!.engNo)
         txtVDChassisNo.setText(vehicle!!.chassisNo)
+        txtVDPolicyNo.setText(policy!!.policyNo)
+        txtVDCoverPeriod.setText(policy!!.coverPeriod)
+        txtVDSumInsured.setText(policy!!.sumInsured)
+        txtVDInsType.setText(policy!!.type)
     }
 }

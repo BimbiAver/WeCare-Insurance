@@ -7,9 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
+import com.orionsoft.wecareinsurance.model.Policy
 import com.orionsoft.wecareinsurance.model.Vehicle
 
-class VehicleListViewAdapter(private val aContext: Context, private val arrayList: ArrayList<Vehicle>): ArrayAdapter<Vehicle>(aContext, R.layout.vehicle_list_items, arrayList) {
+class VehicleListViewAdapter(private val aContext: Context, private val vehicleArrayList: ArrayList<Vehicle>, private val policyArrayList: ArrayList<Policy>): ArrayAdapter<Vehicle>(aContext, R.layout.vehicle_list_items, vehicleArrayList) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
 
@@ -19,10 +20,12 @@ class VehicleListViewAdapter(private val aContext: Context, private val arrayLis
         var txtRegVehNo: TextView = view.findViewById(R.id.txtRegVehNo)
         var txtRegVehMake: TextView = view.findViewById(R.id.txtRegVehMake)
         var txtRegVehModel: TextView = view.findViewById(R.id.txtRegVehModel)
+        var txtRegVehPolicyNo: TextView = view.findViewById(R.id.txtRegVehPolicyNo)
 
-        txtRegVehNo.text = arrayList[position].vehicleNo
-        txtRegVehMake.text = arrayList[position].make
-        txtRegVehModel.text = arrayList[position].model
+        txtRegVehNo.text = vehicleArrayList[position].vehicleNo
+        txtRegVehMake.text = vehicleArrayList[position].make
+        txtRegVehModel.text = vehicleArrayList[position].model
+        txtRegVehPolicyNo.text = policyArrayList[position].policyNo
 
         return view
     }

@@ -12,7 +12,7 @@ class ReportCaseDetailsActivity : AppCompatActivity() {
 
         val buttonClick = findViewById<Button>(R.id.btn_case_details)
         buttonClick.setOnClickListener{
-            val intent = Intent(this, ReportImagesActivity::class.java)
+            val intent = Intent(this, ReportCaseImagesActivity::class.java)
             startActivity(intent)
         }
 

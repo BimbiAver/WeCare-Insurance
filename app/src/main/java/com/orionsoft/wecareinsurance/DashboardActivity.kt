@@ -3,12 +3,10 @@ package com.orionsoft.wecareinsurance
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
@@ -34,7 +32,7 @@ class DashboardActivity : AppCompatActivity(), View.OnClickListener {
                 logout() // User Logout
             }
             R.id.cdViewReportCase -> {
-                val intent = Intent(this, ReportVehicleActivity::class.java)
+                val intent = Intent(this, ReportCaseVehicleActivity::class.java)
                 startActivity(intent)
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
             }

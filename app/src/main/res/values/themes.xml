@@ -17,5 +17,10 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="DatePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/blue</item>
+        <item name="colorOnPrimary">@color/blue</item>
+    </style>
+
 
 </resources>

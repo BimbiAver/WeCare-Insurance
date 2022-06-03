@@ -64,7 +64,7 @@ class ReportCasePolicyActivity : AppCompatActivity(), View.OnClickListener {
                     case = Case(vehicleNo, mileage, raBtnRCPCover.text.toString(), raBtnRCPDebit.text.toString())
 
                     val intent = Intent(this, ReportCaseDriverDetailsActivity::class.java)
-                    // Bind vehicle number
+                    // Bind case object
                     intent.putExtra("objCase", case)
                     startActivity(intent)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)

@@ -32,44 +32,45 @@
 
     <ImageButton
         android:id="@+id/img_submit"
-        android:layout_width="93dp"
-        android:layout_height="84dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="250dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include"
-        app:layout_constraintVertical_bias="0.395"
-        app:srcCompat="@drawable/submit_5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/check_1"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/txt_submitted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submitted Successfully!"
+        android:layout_marginTop="20dp"
+        android:text="Submitted Successfully !"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/include"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/img_submit"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintEnd_toEndOf="@+id/img_submit"
+        app:layout_constraintStart_toStartOf="@+id/img_submit"
+        app:layout_constraintTop_toBottomOf="@+id/img_submit" />
 
     <Button
-        android:id="@+id/btn_done"
-        android:layout_width="119dp"
-        android:layout_height="55dp"
+        android:id="@+id/btnRCSSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/yellow"
         android:text="Done"
+        android:textAlignment="center"
+        android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include"
-        app:layout_constraintVertical_bias="0.894" />
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_submitted"
+        app:layout_constraintStart_toStartOf="@+id/txt_submitted"
+        app:layout_constraintTop_toBottomOf="@+id/txt_submitted" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

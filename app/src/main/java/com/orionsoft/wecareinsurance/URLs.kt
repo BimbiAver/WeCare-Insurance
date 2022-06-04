@@ -9,4 +9,5 @@ class URLs {
     val getVehicleDetails = rootURL + "get-vehicle-details.php"
     val previousCases = rootURL + "previous-cases.php"
     val caseDetails = rootURL + "case-details.php"
+    val submitCase = rootURL + "add-case.php"
 }

@@ -49,7 +49,7 @@ class ReportCaseDriverDetailsActivity : AppCompatActivity(), View.OnClickListene
             }
             R.id.btnRCDNext -> {
                 if (validateFields()) {
-                    case2 = Case(case!!.vehicleNo, case!!.mileage, case!!.coverNote, case!!.debitOut, case!!.driverNIC, case!!.driverLicenseNo, case!!.vehicleTypes, case!!.expiryDate, case!!.driverName, case!!.driverAddress, case!!.driverConNumber)
+                    case2 = Case(case!!.vehicleNo, case!!.mileage, case!!.coverNote, case!!.debitOut, edTxtRCDNICNo.text.toString(), edTxtRCDLicenseNo.text.toString(), edTxtRCDVehiCat.text.toString(), edTxtRCDExpDate.text.toString(), edTxtRCDFName.text.toString(), edTxtRCDAddress.text.toString(), edTxtRCDConNumber.text.toString())
 
                     val intent = Intent(this, ReportCaseDetailsActivity::class.java)
                     // Bind case object

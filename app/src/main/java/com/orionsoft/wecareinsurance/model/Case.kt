@@ -9,4 +9,6 @@ data class Case(var caseNo: String, var status: String, var vehicleNo: String, v
 
     constructor(vehicleNo: String, mileage: String, coverNote: String, debitOut: String, driverNIC: String, driverLicenseNo: String, vehicleTypes: String, expiryDate: String, driverName: String, driverAddress: String, driverConNumber: String) : this("", "", vehicleNo, mileage,"", coverNote, debitOut, driverNIC, driverLicenseNo, vehicleTypes, expiryDate, driverName, driverAddress, driverConNumber, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "")
 
+    constructor(vehicleNo: String, mileage: String, coverNote: String, debitOut: String, driverNIC: String, driverLicenseNo: String, vehicleTypes: String, expiryDate: String, driverName: String, driverAddress: String, driverConNumber: String, accidentDate: String, accidentTime: String, location: String, damage: String, otherReason: String, extentDamage: String) : this("", "", vehicleNo, mileage,"", coverNote, debitOut, driverNIC, driverLicenseNo, vehicleTypes, expiryDate, driverName, driverAddress, driverConNumber, accidentDate, accidentTime, location, damage, otherReason, extentDamage, "", "", "", "", "", "", "", "", "", "")
+
 }

@@ -7,4 +7,20 @@
     <string name="hyperlink5"><u>Get Code</u><a href=""></a></string>
     <string name="hyperlink6">More Details<a href=""></a></string>
     <string name="eng">Eng</string>
+
+    <string-array name="cause_of_damage">
+        <item>Breaking</item>
+        <item>Distracted Driving</item>
+        <item>Drunk Driving</item>
+        <item>Fire</item>
+        <item>Hit &amp; Run</item>
+        <item>Inclement Weather</item>
+        <item>Malicious Act</item>
+        <item>Mechanical Faliure</item>
+        <item>Night Driving</item>
+        <item>Reckless Driving</item>
+        <item>Speeding</item>
+        <item>Other</item>
+    </string-array>
+
 </resources>
